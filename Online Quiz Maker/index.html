@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Quiz UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="auth" class="card">
+    <h3 style="text-align:center;">Login / Register</h3>
+
+    <input id="user" placeholder="Username">
+    <input id="pass" type="password" placeholder="Password">
+    
+    <button onclick="register()">Register</button>
+    <button onclick="login()">Login</button>
+
+    <p id="msg" style="text-align:center;font-size:12px;"></p>
+</div>
+
+<div id="quiz" class="card" style="display:none;">
+
+    <div class="bar">
+        <div id="fill"></div>
+    </div>
+
+    <p class="qno">Question <span id="num">1</span></p>
+
+    <h3 id="question">Question here</h3>
+
+    <div id="options"></div>
+
+    <button onclick="next()">Next</button>
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

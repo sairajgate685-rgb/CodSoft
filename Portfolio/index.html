@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sairaj D. Gate</h1>
+    <p>BCA Student | Web Developer | IoT Enthusiast</p>
+
+    <nav>
+        <button onclick="show('about')">About</button>
+        <button onclick="show('summary')">Summary</button>
+        <button onclick="show('education')">Education</button>
+        <button onclick="show('skills')">Skills</button>
+        <button onclick="show('projects')">Projects</button>
+        <button onclick="show('download')">download</button>
+        <button onclick="show('contact')">Contact</button>
+    </nav>
+</header>
+
+<section id="about" class="slide">
+    <h2>About Me</h2>
+    <p>
+        Hello, I am Sairaj...
+        I am a web developer...
+    </p>
+    <p>
+        BCA student with a strong foundation in programming, 
+        web technologies, database systems, and computer fundamentals.
+    </p>
+</section>
+
+<section id="summary" class="slide hidden">
+    <h2>Summary</h2>
+    <ul>
+        <li>Strong academic background in programming and web technologies</li>
+        <li>Experience in IoT-based smart home automation using NodeMCU (ESP8266)</li>
+        <li>Developed firmware using Arduino IDE with cloud connectivity</li>
+        <li>Knowledge of software development and system architecture</li>
+    </ul>
+</section>
+
+<section id="education" class="slide hidden">
+    <h2>Education</h2>
+    <p><strong>Bachelor of Computer Application</strong></p>
+    <p>Sigma University (2026)</p>
+    <p>Coursework: Programming, Web Technologies, Data Management, AI, Cloud Computing</p>
+</section>
+
+<section id="skills" class="slide hidden">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li>C, C++, JavaScript</li>
+        <li>HTML, CSS</li>
+        <li>SQL / MySQL</li>
+        <li>Node.js, Express.js</li>
+        <li>NodeMCU (ESP8266), Sensors, Relays</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<section id="projects" class="slide hidden">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>IoT Based Home Automation</h3>
+        <p>
+            Built a smart home system using NodeMCU (ESP8266), sensors, and relay modules.
+            Enabled remote control using Blynk app with real-time monitoring.
+        </p>
+    </div>
+
+    <div class="project">
+        <h3>Calculator</h3>
+        <p>Basic calculator using HTML, CSS, JS.</p>
+    </div>
+
+    <div class="project">
+        <h3>Quiz App</h3>
+        <p>Interactive quiz with score system.</p>
+    </div>
+</section>
+
+<section id="contact" class="slide hidden">
+    <h2>Contact</h2>
+    <p>Email: sairajgate685@gmail.com</p>
+    <p>LinkedIn: www.linkedin.com/in/saigate1528</p>
+</section>
+
+<section id="download" class="slide hidden">
+    <h2>Resume</h2>
+    <a href="https://docs.google.com/document/d/1PSgKqvDhsvrIG5RZC8zqvqkZyBXZwNWs/edit?usp=drive_link&ouid=102142562044490321990&rtpof=true&sd=true" target="_blank">
+        Download Resume
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Sairaj Gate</p>
+</footer>
+
+<script>
+function show(id) {
+    document.querySelectorAll(".slide").forEach(sec => {
+        sec.classList.add("hidden");
+    });
+    document.getElementById(id).classList.remove("hidden");
+}
+</script>
+</body>
+</html>
